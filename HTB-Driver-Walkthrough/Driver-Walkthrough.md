@@ -126,7 +126,7 @@ While local_exploit_suggester is looking for possible exploits, we can check Ton
 ```powershell
 cat C:\Users\Tony\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 ```
-We found at a RICOH driver that is vulnerable to CVE-2019-19363
+We found a RICOH driver that is vulnerable to CVE-2019-19363
 https://nvd.nist.gov/vuln/detail/CVE-2019-19363
 
 ### Exploiting RICOH driver vulenrability

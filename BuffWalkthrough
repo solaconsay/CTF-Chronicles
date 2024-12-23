@@ -1,6 +1,0 @@
-# HTB Buff Walkthrough
-
-## Enumeration
-
-```bash
-nmap -sC -sV 10.10.10.198 -oA nmap -Pn

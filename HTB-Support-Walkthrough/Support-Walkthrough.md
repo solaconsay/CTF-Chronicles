@@ -1,4 +1,4 @@
-3 HTB Support Walkthrough
+# HTB Support Walkthrough
 
 ## Overview
 The "Support" machine is a Windows computer with an SMB file-sharing feature open to everyone. By connecting to this shared folder, we find a program designed to look up user information from the machine's directory.

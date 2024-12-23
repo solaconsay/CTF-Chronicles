@@ -1,5 +1,11 @@
+3 HTB Support Walkthrough
 
-# Enumeration
+## Overview
+The "Support" machine is a Windows computer with an SMB file-sharing feature open to everyone. By connecting to this shared folder, we find a program designed to look up user information from the machine's directory.
+After carefully analyzing how the program works, we discover the password it uses to access the directory. Using this password, we find a user named support and their password, which lets us log in to the machine remotely.
+Once inside, we gather information about the system and its network. We find that the support user has special permissions to make changes on the main system (the Domain Controller). Using a specific method, we take advantage of these permissions to gain full control of the machine with the highest level of access.
+
+## Enumeration
 
 Running nmap on the machine, we got
 

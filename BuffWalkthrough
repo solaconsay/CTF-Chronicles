@@ -1,12 +1,6 @@
-# Buff CTF Walkthrough
+# HTB Buff Walkthrough
 
-This repository contains the complete walkthrough of the **Buff** Capture the Flag challenge, including enumeration, exploitation, privilege escalation, and reverse shell techniques. 
-
-## 1. Enumeration
-
-We start by scanning the target using **Nmap** to identify open ports and services.
+## Enumeration
 
 ```bash
 nmap -sC -sV 10.10.10.198 -oA nmap -Pn
-
-

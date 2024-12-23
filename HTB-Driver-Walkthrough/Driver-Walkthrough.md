@@ -22,6 +22,8 @@ nmap -sC -sV 10.10.11.106 -oA nmap -Pn
 
 HTTP and HTTPS ports are open, indicating that a website is running on the machine.
 
+using default credentials of admin:admin, we managed to access the website.
+
 While exploring the site, we found an upload form for submitting printer firmware. We attempted to upload various file types to check if the site was vulnerable to malicious file uploads.
 
 After uploading a text file, we confirmed that the website accepts all file types, not just firmware files.

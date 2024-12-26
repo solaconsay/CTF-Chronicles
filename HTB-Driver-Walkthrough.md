@@ -17,7 +17,7 @@ nmap -sC -sV 10.10.11.106 -oA nmap -Pn
 
 **The `nmap` scan revealed the following:**
 
-![alt text](image.png)
+![alt text](Snapshots/Driver-image.png)
 
 
 HTTP and HTTPS ports are open, indicating that a website is running on the machine.
@@ -28,7 +28,7 @@ While exploring the site, we found an upload form for submitting printer firmwar
 
 After uploading a text file, we confirmed that the website accepts all file types, not just firmware files.
 
-![alt text](image-1.png)
+![alt text](Snapshots/Driver-image-1.png)
 
 
 ## Exploitation
@@ -77,7 +77,7 @@ tony:liltony
 evil-winrm  -i driver.htb -u tony -p liltony
 ```
 
-![alt text](image-2.png)
+![alt text](Snapshots/Driver-image-2.png)
 
 ## Privilege Escalation
 

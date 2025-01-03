@@ -1,5 +1,5 @@
 
-# HTB Buff Walkthrough
+# HTB Buff Write-up
 
 ## Overview
 Buff is a Windows machine with an easy difficulty level, running Gym Management System 1.0, which has an unauthenticated remote code execution vulnerability. After scanning the internal network, a service is discovered on port 8888. The installation file for this service is found on the disk, enabling local debugging. By setting up port forwarding, we can access the service remotely and exploit the vulnerability.

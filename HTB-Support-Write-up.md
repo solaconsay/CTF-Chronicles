@@ -1,6 +1,6 @@
 # HTB Support Write-up
 
-# Enumeration
+## Enumeration
 
 Running nmap on the machine, we got
 
@@ -86,7 +86,7 @@ support//ldap:0Nv32PTwgYjzg9/8j5TbmvPd3e7WhtWWyuPsyO76/Y+U193E:nvEfEK16^1aM4$e7A
 
 ## Exploitation
 
-Now that we got credentials, we try to search in to the machine using ldap. 
+Now that we got credentials, we tried to search in to the machine using ldap. 
 ldapsearch didn't work on mine so I used impacket-GetADUser instead
 
 ```bash

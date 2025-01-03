@@ -1,4 +1,4 @@
-# HTB Driver Walkthrough
+# HTB Driver Write-up
 
 ## Overview
 The "Driver" machine is a Windows system with a focus on printer-related vulnerabilities. During the initial scan, we found several services running, including a web server on port 80, SMB (file sharing) on port 445, and WinRM (remote management) on port 5985.

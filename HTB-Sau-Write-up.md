@@ -11,7 +11,7 @@ A quick Nmap scan revealed the following open ports:
 nmap -sCV -oA nmap/sau 10.10.11.224 -Pn
 ```
 
-
+![alt text](Snapshots/Sau-image-14.png)
 
 - **SSH** on port 22
 - **HTTP** on port 80

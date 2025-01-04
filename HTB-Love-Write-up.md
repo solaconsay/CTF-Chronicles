@@ -1,4 +1,4 @@
-# Penetration Test Write-Up: "Love" Machine
+# HTB Love Write-up
 
 ## Overview
 

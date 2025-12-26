@@ -27,7 +27,7 @@ Reviewing app.py revealed a key finding:
 
 ![alt text](Snapshots/Conversor-2.png)
 
-- XML parsing is protected using:
+- XML is protected by a parser.
 - XSLT parsing, however, lacks a secure parser, making it vulnerable to XXE through XSLT.
 
 This vulnerability enables XSLT Injection, allowing remote file access and code execution.
